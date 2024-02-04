@@ -14,12 +14,12 @@ app.title = 'Aplicacion de ventas'
 app.version = '1.0.1'
 base.metadata.create_all(bind=motor)
 
-# creamos el modelo
+# creamos el modelo ....
 class Usuario(BaseModel):
     email:str
     clave:str
 class Ventas(BaseModel):
-    #id: int = Field(ge=0, le=20)
+    #id: int = Field(ge=0, le=20)#
     id: Optional[int]=None
     fecha: str
     #tienda: str = Field(default="Tienda01",min_length=4, max_length=10)
